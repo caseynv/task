@@ -10,7 +10,7 @@ function Home() {
     <div className="h-screen md:grid grid-cols-12 items-center justify-center">
       <Left />
 
-      <div className="right md:col-span-5 xs:col-span-12 px-10">
+      <div className="right md:col-span-5 xs:col-span-12 pt-10 px-10">
         <div className="right-1">
           <h3 className="text-2xl font-bold text-center">
             Your Money-Making machine in your pocket

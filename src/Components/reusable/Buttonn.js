@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 const Buttonn = ({ text, link, color, text_color, border_color }) => {
   return (
-    <div className="button py-4">
+    <div className="button pt-8 py-4">
       <button
         className={"font-light flex text-base px-6 py-4 relative"}
         style={{
