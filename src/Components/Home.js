@@ -32,14 +32,14 @@ function Home() {
           <Buttonn
             text="Continue with Google"
             link="/#"
-            color="#15317E"
+            color="#1D4F99"
             text_color="white"
           />
           <div className="flex py-4 w-full">
             <div className="h-6 w-full">
-              <hr className="w-full mt-2.5 h-4" />
+              <hr className="w-full mt-2.5" />
             </div>
-            <p className="text-slate-500 mx-2">OR</p>
+            <p className="text-[#A4A4A4] mx-2">OR</p>
             <div className="h-6 w-full">
               <hr className="w-full mt-2.5" />
             </div>
@@ -50,7 +50,7 @@ function Home() {
             link="/Signup"
             color="#D22B2B"
           />
-          <Link className="pt-4" to="/Login">
+          <Link className="py-4" to="/Login">
             Login to my account
           </Link>
           <Button

@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const Button = ({ text, link, color, text_color, border_color }) => {
   return (
-    <div className="button py-4">
+    <div className="button w-3/5 py-4">
       <button type='submit'
-        className={"rounded-full font-semibold text-xl px-6 py-4 relative"}
+        className={"rounded-full font-semibold text-xl px-6 py-4 w-full relative"}
         style={{
           backgroundColor: `${color ? color : ""}`,
           color: `${text ? text_color : ""}`,

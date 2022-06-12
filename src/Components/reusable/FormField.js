@@ -1,6 +1,6 @@
 const loginFields = [
   {
-    labelText: "Email address",
+    labelText: "Email",
     labelFor: "email-address",
     id: "Email",
     name: "email",
@@ -43,7 +43,7 @@ const signupFields = [
     placeholder: "Enter your last name",
   },
   {
-    labelText: "Email address",
+    labelText: "Email",
     labelFor: "email-address",
     id: "Email",
     name: "email",

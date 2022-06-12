@@ -93,11 +93,11 @@ function Signup(){
                 ))}
               </div>
             </form>
-            <div className="button py-4">
+            <div className="button w-4/5 py-4">
               <button
                 type="submit"
                 className={
-                  "rounded-full font-semibold text-xl px-6 py-4 relative"
+                  "rounded-full w-full font-semibold text-xl px-6 py-4 relative"
                 }
                 onClick={handleSubmit}
                 style={{
