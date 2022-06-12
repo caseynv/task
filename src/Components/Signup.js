@@ -28,7 +28,7 @@ function Signup(){
       signupState.Firstname,
       signupState.Password].includes("")
     ) {
-      setError1('Field(s)are required')
+      setError1('Kindly fill all required field(s) before proceeeding')
     }
     else{
       const requestOptions = {
@@ -73,9 +73,14 @@ function Signup(){
                 <Icon icon="clarity:times-line" width="30" height="30" />
               </Link>
               <p className="text-2xl font-bold pt-2">Sign Up</p>
+              {error1 && (
+                <div className="rounded py-4 mt-4 w-full px-4 bg-red-300 text-black font-semibold">
+                  {error1}
+                </div>
+              )}
             </div>
-            {error1 && <div className="text-red-500">{error1}</div>}
-            <form className="mt-4 w-4/5">
+
+            <form className="mt-2 w-4/5">
               <div className="">
                 {fields.map((field) => (
                   <Input
@@ -108,7 +113,7 @@ function Signup(){
                 Create account
               </button>
             </div>
-            <p className="pt-4">
+            <p className="pt-2">
               Already own an account?
               <Coloredfont text=" Log in" link="/Login" text_color="#D22B2B" />
             </p>

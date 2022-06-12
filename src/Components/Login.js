@@ -31,9 +31,15 @@ function Login() {
             if (item1 === loginState.Email && item2 === loginState.Password) {
               localStorage.setItem("user-info", JSON.stringify(response));
               navigate("/Welcome");
-            }else{
-              setError1("Please check details");
             }
+            else if (item1 !== loginState.Email && item2 === loginState.Password) {
+              setError1("Invalid Email Provided");
+            } else if (
+              item1 === loginState.Email &&
+              item2 !== loginState.Password
+            ) {
+              setError1("Server Error");
+            } 
           })
         })
         .catch((err) => console.error(err));
@@ -51,9 +57,13 @@ function Login() {
               <Icon icon="clarity:times-line" width="30" height="30" />
             </Link>
             <p className="text-2xl font-bold pt-2">Login</p>
+            {error1 && (
+              <div className="rounded py-4 mt-4 w-full px-4 bg-red-300 text-black font-semibold">
+                {error1}
+              </div>
+            )}
           </div>
 
-          {error1 && <div className="text-red-500">{error1}</div>}
           <form className="mt-4 w-4/5">
             <div className="">
               {fields.map((field) => (
