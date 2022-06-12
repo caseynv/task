@@ -23,10 +23,10 @@ function Signup(){
 
   const handleSubmit = () => {
     if (
-      signupState.Email === "" ||
-      signupState.Lastname === ""||
-      signupState.Firstname  === "" ||
-      signupState.Password === ""
+      [signupState.Email,
+      signupState.Lastname,
+      signupState.Firstname,
+      signupState.Password].includes("")
     ) {
       setError1('Field(s)are required')
     }
